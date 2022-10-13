@@ -1,6 +1,7 @@
 import React from 'react';
 
 import partner1 from '../../images/partners/partner1.png';
+import background from '../../images/background-brand.png';
 import partner2 from '../../images/partners/partner2.png';
 import partner3 from '../../images/partners/partner3.png';
 import partner4 from '../../images/partners/partner4.png';
@@ -8,8 +9,8 @@ import { Fade } from 'react-reveal';
 
 export default function PartnerSection() {
   return (
-    <section className="px-6">
-      <div className='rounded-3xl bg-gradient-to-b from-[#FFFFFF] to-[#F4F9FF] py-20'>
+    <section className="px-6" >
+      <div className='rounded-3xl bg-brand-pattern from-[#FFFFFF] to-[#F4F9FF] py-20' id='brand'  >
         <div className="container mx-auto">
           <div className="text-center mb-4">
             <h2 className="text-3xl font-bold mb-4">Trusted Partners Worldwide</h2>

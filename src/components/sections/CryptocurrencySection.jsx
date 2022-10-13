@@ -9,17 +9,17 @@ const trendingCoins = [{
   uptrend: true
 }, {
   image: '/cryptocurrencies/etherium.png',
-  name: 'Bitcoin',
+  name: 'Ethereum',
   price: '$3,480.65',
   uptrend: false
 }, {
   image: '/cryptocurrencies/solana.png',
-  name: 'Bitcoin',
+  name: 'Solana',
   price: '$150,20',
   uptrend: true
 }, {
   image: '/cryptocurrencies/doge.png',
-  name: 'Bitcoin',
+  name: 'Dogecoin',
   price: '$0,1572',
   uptrend: true
 }];

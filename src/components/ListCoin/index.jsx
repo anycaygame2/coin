@@ -11,9 +11,9 @@ export default function ListCoin({ title, more, data }) {
     <>
       <div className="flex justify-between mb-6">
         <span className="font-bold text-lg">{emoji(title, { props: { className: 'inline-block mr-4 text-normal' } })}</span>
-        <a href={more} className="text-primary">
+        <a href={more} className="text-primary group">
           More
-          <BsChevronRight className="inline ml-2" />
+          <BsChevronRight className="inline ml-2 group-hover:animate-moveright" />
         </a>
       </div>
       <div>

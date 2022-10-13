@@ -36,7 +36,7 @@ export default function HeroSection() {
               <PrimaryButton className="w-full lg:w-auto mb-2 lg:mb-0">
                 Get Started
               </PrimaryButton>
-              <DropdownButton name="Download App" className="w-full lg:w-auto">
+              <DropdownButton name="Download App" className="w-full lg:w-auto group">
                 <a href="/download/windows" target="_blank" className="w-full hover:bg-primary px-6 pt-4 pb-2 block hover:text-white">
                   <FaWindows className='inline mr-2' /> Windows
                 </a>

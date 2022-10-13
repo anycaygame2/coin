@@ -35,7 +35,24 @@ module.exports = {
         lightgray: "#DDDDDD",
         green: "#28C165",
         red: "#F4574D",
-      }
+      },
+      backgroundImage: {
+        'brand-pattern': "linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(244, 249, 255, 0.9)), url('/src/images/background-brand.png')",
+      },
+      animation: {
+        moveright: 'moveright 1s ease-in-out infinite',
+        movedown: 'movedown 1s ease-in-out infinite',
+      },
+      keyframes: {
+        moveright: {
+          '0%, 100%': { transform: 'translateX(-20%)' },
+          '50%': { transform: 'translateX(0%)' },
+        },
+        movedown: {
+          '0%, 100%': { transform: 'translateY(-20%)' },
+          '50%': { transform: 'translateY(0%)' },
+        }
+      },
     },
   },
   plugins: [ ],
