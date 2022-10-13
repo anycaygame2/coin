@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{js,jsx}",
     "./index.html"
@@ -23,7 +24,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["Inter", "sans-serif"]
+        poppins: [ "Inter", "sans-serif" ]
       },
       colors: {
         primary: "#468EF9",
@@ -37,5 +38,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [ ],
 }
