@@ -1,52 +1,93 @@
-import React from 'react'
-import logo from '../../images/logo.svg'
-import PrimaryButton from '../buttons/PrimaryButton'
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import React from 'react';
+import { BsArrowRight } from 'react-icons/bs';
 
-export default function index() {
+import logo from '../../images/logo.svg';
+import PrimaryButton from '../buttons/PrimaryButton';
+
+export default function Footer() {
   return (
-    <footer className='container  text-left text-gray'>
-      <div className='border-t border-lightgray grid grid-cols-4  items-stretch'>
-        <div className=' px-5 py-[70px] pr-[70px] flex flex-nowrap justify-start space-between ' >
-          <div className='w-[130px]'><img src={logo} alt="logo cion" /></div>
-          <ul className='flex flex-col gap-4'>
-            <li>Buy Crypto</li>
-            <li>Exchanges</li>
-            <li>Watchlist</li>
-            <li>Portfolio</li>
-            <li>NFT</li>
-          </ul>
-        </div>
-        <div className='py-[70px] border-l border-lightgray'>
-          <ul className='flex flex-col gap-4'>
-            <li>Products</li>
-            <li>Abous Us</li>
-            <li>Careers</li>
-            <li>Blog</li>
-            <li>Security</li>
-          </ul>
-        </div>
-        <div className='py-[70px] border-r border-l border-lightgray'>
-          <ul className='flex flex-col gap-4'>
-            <li>Help Center</li>
-            <li>Contact Us</li>
-            <li>System Status</li>
-            <li>Area of Avaibility</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
-        <div className='p-[70px] pr-5 flex flex-col gap-4'>
-          <p><strong>Newsletter</strong></p>
-          <p>Never miss anything crypto when you're on the go</p>
-
-          <div className='flex'><input type="text" />
-          <PrimaryButton className="p-4">
-                <AiOutlineArrowRight /> 
-          </PrimaryButton>
+    <footer>
+      <div className="container px-0  border-y border-lightgray">
+        <div className="flex flex-wrap justify-between">
+          <div className="w-2/12 xl:w-[14%]  py-4 lg:py-6 order-1" >
+            <div className='mb-6 pl-4'>
+              <img src={logo} alt="" />
+            </div>
+          </div>
+          <div className='w-full xl:w-7/12 border-lightgray border-l border-r -order-1 xl:order-1  border-b-[1px] xl:border-b-0'>
+            <div className='grid grid-cols-3 bg-lightgray gap-[1px]'>
+              <ul className="p-6 xl:pl-12 bg-white  flex flex-col gap-4">
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Buy Crypto</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Exchanges</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Watchlist</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Portfolio</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>NFT</a>
+                </li>
+              </ul>
+              <ul className="p-6  xl:pl-12 bg-white  flex flex-col gap-4">
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Products</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>About Us</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Careers</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Blog</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Security</a>
+                </li>
+              </ul>
+              <ul className="p-6  xl:pl-12 bg-white  flex flex-col gap-4">
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Help Center</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Contact Us</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>System Status</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Area Avaibility</a>
+                </li>
+                <li>
+                  <a href="/" className='text-gray hover:text-primary'>Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-auto xl:w-3/12 p-4 lg:p-6 order-2">
+            <span className='text-gray'>Newsletter</span>
+            <p className='text-gray font-thin'>Never miss anything crypto when you're on the go</p>
+            <div className="flex gap-4 my-4">
+              <div>
+                <input type="email" className="border border-lightgray rounded-xl p-4 outline-none focus:border-primary w-full" placeholder="Enter your email" />
+              </div>
+              <div>
+                <PrimaryButton className="!px-5   aspect-square !rounded-md">
+                  <BsArrowRight color='white' className="group-hover:animate-moveright" />
+                </PrimaryButton>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <p className='border-t border-lightgray py-6'>© Copyright 2022 NEFA LLC. All rights reserved</p>
+      <div className="text-center py-6">
+        <p className="text-gray">© Copyright 2022 NEFA LLC. All rights reserved</p>
+      </div>
     </footer>
-  )
+  );
 }
