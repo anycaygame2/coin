@@ -6,8 +6,9 @@ import { Fade } from 'react-reveal';
 
 export default function SecuritySection() {
   return (
-    <section className="container mx-auto py-32">
-      <div className="grid md:grid-cols-2">
+
+    <section className="container mx-auto px-4 xl:px-16 py-32">
+      <div className="grid md:grid-cols-2 items-center">
         <div>
           <Fade up>
             <img src={banks} alt="" />

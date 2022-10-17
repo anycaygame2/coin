@@ -36,9 +36,10 @@ const FaqItem = ({ open, title, children }) => {
 
 export default function FaqSection() {
   return (
-    <section className="container mx-auto py-32">
-      <div className="grid md:grid-cols-2">
-        <div className="mb-4">
+
+    <section className="container mx-auto px-4 xl:px-16 py-32">
+      <div className="grid md:grid-cols-2 items-center">
+        <div>
           <Fade up duration={1000}>
             <img src={faq} alt="FAQ" />
           </Fade>
