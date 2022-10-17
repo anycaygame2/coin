@@ -8,6 +8,7 @@ import { Fade } from 'react-reveal';
 
 export default function StepSection() {
   return (
+
     <section className="px-4">
       <div className='rounded-3xl bg-gradient-to-b from-[#FFFFFF] to-[#F4F9FF] py-20'>
         <div className="container px-4 xl:px-16 mx-auto text-center">
@@ -30,6 +31,7 @@ export default function StepSection() {
             <Fade up delay={500}>
               <div className="text-center relative px-4">
                 <div className='relative'>
+
                   <img src={walletImage} className="mb-4 mx-auto hover:-translate-y-6 hover:scale-105 transition-all duration-300 z-10" alt="step 2" />
                   <img src={arrow} alt="" className="hidden md:block absolute top-1/2 -right-1/2 -translate-x-[50%] z-0" />
                 </div>
@@ -41,6 +43,7 @@ export default function StepSection() {
             </Fade>
             <Fade up delay={1000}>
               <div className="text-center relative px-4">
+
                 <img src={okayImage} className="mb-4 mx-auto hover:-translate-y-6 hover:scale-105 transition-all duration-300 z-10" alt="step 3" />
                 <h3 className="text-2xl font-bold mb-4">Buy Crypto</h3>
                 <p className="text-gray max-w-sm">

@@ -6,6 +6,7 @@ import { Fade } from 'react-reveal';
 
 export default function TradingToolsSection() {
   return (
+
     <section className="px-4">
       <div className='rounded-3xl bg-gradient-to-b from-[#FFFFFF] to-[#F4F9FF] py-20'>
         <div className="container px-4 xl:px-16 mx-auto">
@@ -35,6 +36,7 @@ export default function TradingToolsSection() {
                 </button>
               </a>
             </div>
+
             <div className="row-start-1">
               <Fade up>
                 <img src={tradingTools} alt="" />

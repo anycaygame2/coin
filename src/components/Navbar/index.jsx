@@ -65,6 +65,7 @@ export default function Navbar() {
             Sign Up
           </PrimaryButton>
         </div>
+
         <div className="xl:hidden text-4xl">
           <button className="z-50 p-4 block transition-all" onClick={() => setDropdownOpen(!dropdownOpen)}>
             {dropdownOpen ?
