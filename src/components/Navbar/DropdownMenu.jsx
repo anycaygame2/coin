@@ -16,7 +16,7 @@ export default function DropdownMenu({ children }) {
         onClick={() => setOpenMenu(!openMenu)}
       >
         Product
-        <BsChevronDown className="inline ml-2" />
+        <BsChevronDown className="inline ml-2 group-hover:animate-movedown -mb-[2px]" />
       </span>
       <ClickOutComponent onClickOut={() => open && setOpenMenu(false)}>
         <div className={classNames("lg:absolute top-full shadow-lg -left-1/2 -right-1/2 rounded-lg bg-white", {

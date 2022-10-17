@@ -9,12 +9,12 @@ export default function Footer() {
     <footer>
       <div className="container px-2 border-y border-lightgray">
         <div className="flex flex-wrap justify-between">
-          <div className="w-2/12 xl:w-[14%]  py-4 lg:py-6">
+          <div className="w-2/12 xl:w-[14%]  py-4 lg:py-6 order-2">
             <div className='mb-6'>
               <img src={logo} alt="" />
             </div>
           </div>
-          <div className='w-10/12 xl:w-7/12 border-lightgray border-l border-r '>
+          <div className='w-full xl:w-7/12 border-lightgray xl:border-l border-b xl:border-b-0  xl:border-r order-1 xl:order-2 '>
             <div className='grid grid-cols-3 bg-lightgray gap-[1px]'>
               <ul className="p-6 xl:pl-12 bg-white">
                 <li className='mb-4'>
@@ -69,7 +69,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full xl:w-3/12 p-4 lg:p-6">
+          <div className="xl:w-3/12 p-4 lg:p-6 order-2">
             <span className='text-gray'>Newsletter</span>
             <p className='text-gray font-thin'>Never miss anything crypto when you're on the go</p>
             <div className="flex gap-4 my-4">

@@ -42,7 +42,6 @@ export default function Navbar() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleWindowScroll);
-
     return () => window.removeEventListener('scroll', handleWindowScroll);
   }, []);
 

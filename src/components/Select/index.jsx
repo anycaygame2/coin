@@ -37,14 +37,14 @@ export default function Select({ onChange, value = "BTC" }) {
     <div className="relative">
       <ClickOutComponent onClickOut={() => isOpen && setIsOpen(false)}>
 
-        <div className="border border-primary cursor-pointer rounded-2xl py-3 md:py-4 px-4 md:px-6 flex items-center"
+        <div className="border border-primary cursor-pointer rounded-2xl py-3 md:py-4 px-4 md:px-6 flex items-center group"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className='w-[26px] pr-2'>
             <img src={valueSelected.icon} alt={valueSelected.name} className="flex items-center" />
           </div>
           <span className='inline-block mr-2'>{valueSelected.name}</span>
-          <BsChevronDown />
+          <BsChevronDown className='group-hover:animate-movedown' />
         </div>
 
         <div className={classNames('absolute top-full right-0 left-0 bg-white z-[2] mt-4 rounded-xl shadow-xl border border-primary overflow-hidden', {
