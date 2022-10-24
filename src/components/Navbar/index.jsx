@@ -12,7 +12,7 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [backgroundwhite, setBackgroundWhite] = useState(false);
 
-  const isMobile = useMediaQuery({ maxWidth: '768px' });
+  const isMobile = useMediaQuery({ maxWidth: '976px' });
 
   const handleWindowScroll = (e) => {
     const height = window.scrollY;
@@ -50,14 +50,14 @@ export default function Navbar() {
     <nav className={classNames('fixed w-full transition-all duration-700 z-10 py-8 ', {
       'bg-white/10 shadow-lg backdrop-blur !py-3': backgroundwhite
     })}>
-      <div className="px-4 container mx-auto top-0 flex justify-between items-center">
+      <div className="px-4 container mx-auto top-0 flex flex-wrap gap-4   justify-between items-center">
         <div className="flex items-center">
           <img src={logo} className="mr-6" alt="Neva" />
-          <div className='hidden mx-4 gap-8 xl:flex'>
+          <div className='hidden mx-2 xl:mx-4 gap-3 xl:gap-8 xl:flex'>
             <Menus />
           </div>
         </div>
-        <div className="hidden gap-4 md:flex">
+        <div className="hidden gap-4 lg:flex">
           <SecondaryButton>
             Sign In
           </SecondaryButton>
@@ -65,7 +65,8 @@ export default function Navbar() {
             Sign Up
           </PrimaryButton>
         </div>
-        <div className="md:hidden text-2xl">
+
+        <div className="xl:hidden text-4xl">
           <button className="z-50 p-4 block transition-all" onClick={() => setDropdownOpen(!dropdownOpen)}>
             {dropdownOpen ?
               <BsX />
@@ -82,7 +83,7 @@ export default function Navbar() {
           })}>
             <div className="h-screen left-0 bg-black bg-opacity-30" onClick={handleBlackScreenClick}>
               <div className="z-20 shadow-xl bg-white p-6">
-                <div className="gap-4 flex mb-6">
+                <div className="gap-4 flex mb-6 lg:hidden">
                   <SecondaryButton className="w-full">
                     Sign In
                   </SecondaryButton>

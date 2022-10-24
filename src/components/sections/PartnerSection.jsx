@@ -9,7 +9,7 @@ import { Fade } from 'react-reveal';
 
 export default function PartnerSection() {
   return (
-    <section className="px-6" >
+    <section className="px-4" >
       <div className='rounded-3xl bg-brand-pattern from-[#FFFFFF] to-[#F4F9FF] py-20' id='brand'  >
         <div className="container mx-auto">
           <div className="text-center mb-4">
