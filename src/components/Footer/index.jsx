@@ -9,14 +9,14 @@ export default function Footer() {
     <footer>
       <div className="container px-0  border-y border-lightgray">
         <div className="flex flex-wrap justify-between">
-          <div className="w-2/12 xl:w-[14%]  py-4 lg:py-6 order-1" >
+          <div className="w-3/12  md:w-2/12 xl:w-[14%]  py-4 lg:py-6 order-1" >
             <div className='mb-6 pl-4'>
               <img src={logo} alt="" />
             </div>
           </div>
           <div className='w-full xl:w-7/12 border-lightgray border-l border-r -order-1 xl:order-1  border-b-[1px] xl:border-b-0'>
             <div className='grid grid-cols-3 bg-lightgray gap-[1px]'>
-              <ul className="p-6 xl:pl-12 bg-white  flex flex-col gap-4">
+              <ul className="p-3 md:p-6 xl:pl-12 bg-white  flex flex-col gap-4">
                 <li>
                   <a href="/" className='text-gray hover:text-primary'>Buy Crypto</a>
                 </li>
@@ -33,7 +33,7 @@ export default function Footer() {
                   <a href="/" className='text-gray hover:text-primary'>NFT</a>
                 </li>
               </ul>
-              <ul className="p-6  xl:pl-12 bg-white  flex flex-col gap-4">
+              <ul className="p-3 md:p-6  xl:pl-12 bg-white  flex flex-col gap-4">
                 <li>
                   <a href="/" className='text-gray hover:text-primary'>Products</a>
                 </li>
@@ -50,7 +50,7 @@ export default function Footer() {
                   <a href="/" className='text-gray hover:text-primary'>Security</a>
                 </li>
               </ul>
-              <ul className="p-6  xl:pl-12 bg-white  flex flex-col gap-4">
+              <ul className="p-3 md:p-6  xl:pl-12 bg-white  flex flex-col gap-4">
                 <li>
                   <a href="/" className='text-gray hover:text-primary'>Help Center</a>
                 </li>

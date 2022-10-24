@@ -70,14 +70,14 @@ export default function CryptocurrencySection() {
   return (
     <section className="relative md:-mt-10">
       <div className="mx-auto rounded-3xl lg:mx-8 bg-white py-8 px-4 shadow-lg">
-        <div className="grid md:grid-cols-1 xl:grid-cols-3 bg-white lg:bg-lightgray lg:gap-[1px]  ">
-          <div className="px-4 mb-6 lg:mb-0 bg-white">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 bg-white md:bg-lightgray md:gap-[1px]  ">
+          <div className="px-4 mb-0 lg:mb-0 bg-white">
             <ListCoin title='🔥 Trending' data={trendingCoins} more="/" />
           </div>
-          <div className="px-4 mb-6 lg:mb-0 bg-white">
+          <div className="px-4 mb-0 lg:mb-0 bg-white">
             <ListCoin title="🚀  Top Gainers " data={gainerCoins} more="/" />
           </div>
-          <div className="px-4 mb-6 lg:mb-0 bg-white">
+          <div className="px-4 mb-0 lg:mb-0 bg-white">
             <ListCoin title="💎  Recently Added" data={recentlyCoins} more="/" />
           </div>
         </div>

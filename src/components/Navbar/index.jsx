@@ -46,10 +46,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={classNames('fixed w-full transition-all duration-700 z-10 py-8 ', {
-      'bg-white/10 shadow-lg backdrop-blur !py-3': backgroundwhite
-    })}>
-      <div className="px-4 container mx-auto top-0 flex flex-wrap gap-4   justify-between items-center">
+    <nav className={classNames('fixed w-full transition-all duration-700 z-10 py-4 backdrop-blur bg-white/10', {
+      'shadow-lg !py-3': backgroundwhite
+    }, { '!bg-white visible opacity-100': dropdownOpen })}>
+      <div className="px-4 container mx-auto top-0 flex flex-wrap gap-4 justify-between items-center">
         <div className="flex items-center">
           <img src={logo} className="mr-6" alt="Neva" />
           <div className='hidden mx-2 xl:mx-4 gap-3 xl:gap-8 xl:flex'>
@@ -76,7 +76,7 @@ export default function Navbar() {
 
           {/* Menu dropdown */}
           <div className={classNames({
-            'text-base left-0 top-full right-0 absolute transition-all duration-400': true,
+            'text-base left-0 top-full right-0 absolute transition-all duration-400 bg-white': true,
             'invisible opacity-0': !dropdownOpen,
             'visible opacity-100': dropdownOpen,
           })}>

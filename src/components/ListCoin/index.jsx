@@ -9,7 +9,7 @@ import CoinRow from './CoinRow';
 export default function ListCoin({ title, more, data }) {
   return (
     <>
-      <div className="flex justify-between mb-6">
+      <div className="flex justify-between my-4">
         <span className="font-bold text-lg">{emoji(title, { props: { className: 'inline-block mr-4 text-normal' } })}</span>
         <a href={more} className="text-primary group">
           More
