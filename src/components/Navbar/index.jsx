@@ -46,8 +46,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={classNames('fixed w-full transition-all duration-700 z-10 py-4 backdrop-blur bg-white/10', {
-      'shadow-lg !py-3': backgroundwhite
+    <nav className={classNames('fixed w-full transition-all duration-700 z-10 py-4  backdrop-blur bg-white/10 ', {
+      'shadow-lg  !py-3': backgroundwhite
     }, { '!bg-white visible opacity-100': dropdownOpen })}>
       <div className="px-4 container mx-auto top-0 flex flex-wrap gap-4 justify-between items-center">
         <div className="flex items-center">
